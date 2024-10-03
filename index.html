@@ -84,14 +84,16 @@
             <li>Password is Answer1+Answer2+Answer3.</li>
     </div>
 </div>
+    
 <script>
     const correctPassword = "ThomasPublixHopewell"; // Hardcoded correct password
+    
     function validateLogin() {
         const enteredPassword = document.getElementById('password').value;
         const errorMessage = document.getElementById('error-message');
+        
         if (enteredPassword === correctPassword) {
-            errorMessage.style.color = "green";
-            errorMessage.textContent = "Login successful!";
+            window.location.href = 'secret.html';
             
         } else {
             errorMessage.style.color = "red";
