@@ -93,6 +93,11 @@
             errorMessage.style.color = "green";
             errorMessage.textContent = "Login successful!";
             
+            const successMessage = document.createElement('p');
+            successMessage.textContent = "You have successfully used OSINT to crack Tren's password. Input the password in the form.";
+            successMessage.style.color = "green";
+            document.body.appendChild(successMessage);
+            
         } else {
             errorMessage.style.color = "red";
             errorMessage.textContent = "Incorrect password. Please try again.";
